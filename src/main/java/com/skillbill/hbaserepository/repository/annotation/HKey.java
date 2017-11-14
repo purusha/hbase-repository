@@ -1,12 +1,12 @@
-package com.skillbill.at.core;
+package com.skillbill.hbaserepository.repository.annotation;
 
 import java.lang.annotation.Target;
 import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.FIELD;
 
-@Target({ TYPE }) 
+@Target({ FIELD })
 @Retention(RUNTIME)
-public @interface ResolveConnection {
+public @interface HKey {
 
 }

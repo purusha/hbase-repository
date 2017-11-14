@@ -1,0 +1,21 @@
+<configuration>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>file:///tmp/hbase-${user.name}/hbase</value>;
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/tmp/zookeeper</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>2182</value>
+        <description>Property from ZooKeeper's config zoo.cfg.
+            The port at which the clients will connect.
+        </description>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>localhost</value>
+    </property>
+</configuration>
